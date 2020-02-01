@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class StartButtonScript : MonoBehaviour
 {
     public Button startButton;
-    public int number;
+    public Text introText;
+
+
     void Start()
     {
         Button btn = startButton.GetComponent<Button>();
@@ -18,6 +20,7 @@ public class StartButtonScript : MonoBehaviour
     {
         Debug.Log("Clicked Start");
         GameMasterScript.start_game = true;
+        startButton.
         
     }
 
