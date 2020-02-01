@@ -13,14 +13,16 @@ public class StartButtonScript : MonoBehaviour
     {
         Button btn = startButton.GetComponent<Button>();
         btn.onClick.AddListener(StartGame);
-
+        
     }
 
     void StartGame()
     {
         Debug.Log("Clicked Start");
         GameMasterScript.start_game = true;
-        startButton.
+        startButton.gameObject.SetActive(false);
+        introText.gameObject.SetActive(true);
+    
         
     }
 
