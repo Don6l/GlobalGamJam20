@@ -7,7 +7,7 @@ public class StartButtonScript : MonoBehaviour
 {
     public Button startButton;
     public Text introText;
-
+    public Text titleText;
 
     void Start()
     {
@@ -22,7 +22,7 @@ public class StartButtonScript : MonoBehaviour
         GameMasterScript.start_game = true;
         startButton.gameObject.SetActive(false);
         introText.gameObject.SetActive(true);
-    
+        titleText.gameObject.SetActive(false);
         
     }
 
