@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StartButtonScript : MonoBehaviour
 {
     public Button startButton;
+    public Button nextButton;
     public Text introText;
     public Text titleText;
 
@@ -23,7 +24,7 @@ public class StartButtonScript : MonoBehaviour
         startButton.gameObject.SetActive(false);
         introText.gameObject.SetActive(true);
         titleText.gameObject.SetActive(false);
-        
+        nextButton.gameObject.SetActive(true);
     }
 
 }
