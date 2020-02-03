@@ -7,6 +7,7 @@ public class NextButtonScript : MonoBehaviour
 {
     public Button nextButton;
     public Text introText;
+    public Image devHoursBar;
 
     void Start()
     {
@@ -19,5 +20,6 @@ public class NextButtonScript : MonoBehaviour
         Debug.Log("Next Section");
         introText.gameObject.SetActive(false);
         nextButton.gameObject.SetActive(false);
+        devHoursBar.gameObject.SetActive(true);
     }
 }
